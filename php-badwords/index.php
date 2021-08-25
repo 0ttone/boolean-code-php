@@ -22,10 +22,16 @@ $paragrafo = "Charlie era il centro propulsore della band. Il sound degli Stones
 $paragrafoLunghezza = strlen($paragrafo);
 
 $parolaCensura = $_GET['badWord'];
+$censura = "***";
+
+$paragrafoCensura = str_replace($parolaCensura, $censura, $paragrafo);
+$paragrafoCensuraLunghezza = strlen($paragrafoCensura);
 
 
 
 ?>
+
+<p> <?php echo $paragrafo ?> </p>
 
       
 </body>
