@@ -30,8 +30,14 @@ $paragrafoCensuraLunghezza = strlen($paragrafoCensura);
 
 
 ?>
-
+<h1>Paragrafo non censurato</h1>
 <p> <?php echo $paragrafo ?> </p>
+<p>La lunghezza del paragrafo è di <?php echo $paragrafoLunghezza ?> caratteri</p>
+
+<h1>Paragrafo censurato</h1>
+<p> <?php echo $paragrafoCensura ?> </p>
+<p>La lunghezza del paragrafo è di <?php echo $paragrafoCensuraLunghezza ?> caratteri</p>
+
 
       
 </body>
