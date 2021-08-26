@@ -26,7 +26,7 @@ if( strlen($name) > 3 && strpos($mail, '.') !==false && strpos($mail, '@') !==fa
       echo "Accesso riuscito";
 } else {
       echo "Accesso negato";
-}
+};
 
 
 
