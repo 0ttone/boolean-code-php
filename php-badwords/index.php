@@ -27,9 +27,11 @@ $censura = "***";
 $paragrafoCensura = str_replace($parolaCensura, $censura, $paragrafo);
 $paragrafoCensuraLunghezza = strlen($paragrafoCensura);
 
-
+var_dump($censura);
 
 ?>
+
+
 <h1>Paragrafo non censurato</h1>
 <p> <?php echo $paragrafo ?> </p>
 <p>La lunghezza del paragrafo è di <?php echo $paragrafoLunghezza ?> caratteri</p>
@@ -37,6 +39,8 @@ $paragrafoCensuraLunghezza = strlen($paragrafoCensura);
 <h1>Paragrafo censurato</h1>
 <p> <?php echo $paragrafoCensura ?> </p>
 <p>La lunghezza del paragrafo è di <?php echo $paragrafoCensuraLunghezza ?> caratteri</p>
+
+<?php echo var_dump($paragrafoCensuraLunghezza) ?>
 
 
       
