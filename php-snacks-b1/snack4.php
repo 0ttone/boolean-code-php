@@ -19,7 +19,7 @@ un array contenente i suoi voti scolastici
 Stampare nome, cognome e la media dei voti di ogni alunno.
 */
 
-$classe [
+$classe = [
 
       [
             "nome" => "Gigi",
@@ -54,7 +54,7 @@ for ($i = 0; $i < count($classe); $i++) {
       $media = $somma / count($classe[$i]["voti"]);
 
       //unisco i dati in una stringa
-      $mediaAlunno = "La media dei voti di {$classe[$i]['nome']} {$classe[$i]['cognome']} è $media<br> ";
+      $mediaAlunno = "La media dei voti di {$classe[$i]['nome']} {$classe[$i]['cognome']} è: $media<br> ";
 
       //visualizzazione
       echo $mediaAlunno;
