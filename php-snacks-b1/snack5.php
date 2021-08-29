@@ -20,8 +20,10 @@ var_dump($charlieArray);
 
 echo $charlieArray;
 
-for ($i = 0; $i < count($charlieArray); $i++){
-      echo "<p>{$charlieArray[$i]}</p>";
+//dopo correzione in aula aggiunto : -1  punto dopo graffe echo
+
+for ($i = 0; $i < count($charlieArray)-1; $i++){
+      echo "<p>{$charlieArray[$i]}.</p>";
 }
 
 
