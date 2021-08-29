@@ -40,11 +40,11 @@ $db = [
 
   for ($i = 0; $i < count($db); $i++){
         if ($db['teachers']){
-              echo "<div class='teachers'>{$db['teachers'] [$i]['name']} {$db['teachers'] [$i]['lastname']} </div>";
+              echo "<div style= \"background-color:lightgray;\">{$db['teachers'] [$i]['name']} {$db['teachers'] [$i]['lastname']} </div>";
         };
 
         if ($db['pm']){
-            echo "<div class='pm'>{$db['pm'] [$i]['name']} {$db['pm'] [$i]['lastname']} </div>";
+            echo "<div style= \"background-color:green;\">{$db['pm'] [$i]['name']} {$db['pm'] [$i]['lastname']} </div>";
       };
 
   }
