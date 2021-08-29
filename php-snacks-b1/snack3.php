@@ -98,6 +98,25 @@ for($i = 0; $i <count($posts[$originalKey]); $i++){
 
 
 
+
+
+
+?>
+<hr>
+<h3>Qui sotto con foreach</h3>
+<hr>
+<?php
+ //stessa con foreach
+ foreach($posts as $date => $postByDate){
+       echo "($date): <hr>";
+       foreach($postByDate as $singlePost){
+             echo "{$singlePost['title']}<br>";
+             echo "{$singlePost['text']}<br>";
+             echo "{$singlePost['autho']}<br>";
+       }
+
+ }
+
 ?>
       
 </body>
