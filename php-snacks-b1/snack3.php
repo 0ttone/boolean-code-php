@@ -65,6 +65,35 @@ $posts = [
 //1 - con array_keys estrarre l array posizionale dell array interno 
 
 $postsKeys = array_keys($posts);
+//var_dump($posts);
+
+//2 con questa chiave cicliamo gli array interni
+
+for ($x = 0; $x < count($postsKeys); $x++) {
+    
+      //definiamo questa chiave associata chiamandola original
+      $originalKey = $postsKeys[$x];
+      //e stampa le date dell array che contiene gli altri 
+      echo "($originalKey)<br/>";
+
+     // var_dump($posts[$originalKey]);
+
+
+//3 cicliamo con questa chiave all interno di ciascun array con le 
+//relative chiavi che la compongono title author e text
+
+for($i = 0; $i <count($posts[$originalKey]); $i++){
+      //chiamiamo $post il risulato per ciascun [$i] 
+      $post = $posts[$originalKey][$i];
+      echo "<h2>{$post['title']}</h2>";
+      echo "<p>{$post['text']}</p>";
+      echo "<div>{$post['author']}</div>";
+
+}
+
+
+
+}
 
 
 
