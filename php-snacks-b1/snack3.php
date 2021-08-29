@@ -17,6 +17,56 @@ Qui l’array di esempio:
 https://www.codepile.net/pile/R2K5d68z
 */
 
+/*
+rifatto passo passo con for per ricapitolarne l uso - sotto commentato la stessa con
+foreach
+*/
+$posts = [
+
+      '10-01-2019' => [
+          [
+              'title' => 'Post 1',
+              'author' => 'Michele Papagni',
+              'text' => 'Testo post 1'
+          ],
+          [
+              'title' => 'Post 2',
+              'author' => 'Michele Papagni',
+              'text' => 'Testo post 2'
+          ],
+      ],
+      '10-02-2019' => [
+          [
+              'title' => 'Post 3',
+              'author' => 'Michele Papagni',
+              'text' => 'Testo post 3'
+          ]
+      ],
+      '15-05-2019' => [
+          [
+              'title' => 'Post 4',
+              'author' => 'Michele Papagni',
+              'text' => 'Testo post 4'
+          ],
+          [
+              'title' => 'Post 5',
+              'author' => 'Michele Papagni',
+              'text' => 'Testo post 5'
+          ],
+          [
+              'title' => 'Post 6',
+              'author' => 'Michele Papagni',
+              'text' => 'Testo post 6'
+          ]
+      ],
+  ];
+  
+
+//1 - con array_keys estrarre l array posizionale dell array interno 
+
+$postsKeys = array_keys($posts);
+
+
 
 
 ?>
