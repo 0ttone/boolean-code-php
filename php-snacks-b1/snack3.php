@@ -112,7 +112,7 @@ for($i = 0; $i <count($posts[$originalKey]); $i++){
        foreach($postByDate as $singlePost){
              echo "{$singlePost['title']}<br>";
              echo "{$singlePost['text']}<br>";
-             echo "{$singlePost['autho']}<br>";
+             echo "{$singlePost['author']}<br>";
        }
 
  }
